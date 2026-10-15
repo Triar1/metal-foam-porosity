@@ -9,6 +9,20 @@ A computer-vision research project that goes beyond circle detection to estimate
 - **Intensity-guided region growing + connected components** reconstruct irregular pore boundaries and group overlapping circle hypotheses.
 - **Morphological and quantitative analysis** across 10 representative TIFF stacks.
 
+  ## Visual Results
+
+### From circle detection to pore regions
+
+![Segmentation comparison](images/segmentation_comparison.png)
+
+### Quantitative analysis
+
+![Porosity results](images/porosity_results.png)
+
+*Results are estimated from 2D slices;
+segmentation has not been validated
+against manual annotations.*
+
 ## Notebooks
 | Notebook | Purpose |
 |---|---|
