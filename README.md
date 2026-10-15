@@ -9,19 +9,25 @@ A computer-vision research project that goes beyond circle detection to estimate
 - **Intensity-guided region growing + connected components** reconstruct irregular pore boundaries and group overlapping circle hypotheses.
 - **Morphological and quantitative analysis** across 10 representative TIFF stacks.
 
-  ## Visual Results
+## Visual results
 
-### From circle detection to pore regions
+### From Hough circles to reconstructed pore regions
 
-![Segmentation comparison](images/segmentation_comparison.png)
+![Original slice, Hough circles, and reconstructed pore regions](images/hough_vs_regions_experiment.png)
 
-### Quantitative analysis
+*Illustrative intermediate experiment: 67 Hough circles and 44 reconstructed regions on slice 09. These counts differ from the final pipeline's recorded 73 circles and 48 regions.*
 
-![Porosity results](images/porosity_results.png)
+### Estimated 2D porosity across ten slices
 
-*Results are estimated from 2D slices;
-segmentation has not been validated
-against manual annotations.*
+![Estimated pore area fraction and number of detected regions](images/porosity_trends.png)
+
+*The slice index is not a time axis. Results are segmentation-based estimates, not validated 3D porosity measurements.*
+
+### Specimen and pore masks
+
+![Original slice, specimen mask and pore mask](images/sample_and_pore_masks.png)
+
+*Example from slice 09, illustrating the specimen boundary and the pore mask used to calculate area porosity.*
 
 ## Notebooks
 | Notebook | Purpose |
